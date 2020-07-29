@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dresden</title>
+		<meta name="description" content="A slideshow that shows an animated SVG frame on the transitions between slides" />
+		<meta name="keywords" content="slideshow, javascript, frame, animation, svg, shape, path, web design
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="pater/pater.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-2 loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<symbol id="icon-github" viewBox="0 0 32.6 31.8">
+				<title>github</title>
+				<path d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="content content--fixed">
+				<header class="codrops-header">
+					<h1 class="codrops-header__title">Willkommen in Dresden Miguel</h1>
+				</header>
+				<!-- <a class="github" href="https://github.com/codrops/AnimatedFrameSlideshow/" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a> -->
+				<nav class="demos">
+<!-- 					<svg class="icon icon--keyboard"><use xlink:href="#icon-keyboard"></use></svg>
+					<a class="demo" href="index.html"><span>Demo 1</span></a>
+					<a class="demo demo--current" href="index2.html"><span>Demo 2</span></a>
+					<a class="demo" href="index3.html"><span>Demo 3</span></a>
+					<a class="demo" href="index4.html"><span>Demo 4</span></a>
+					<a class="demo" href="index5.html"><span>Demo 5</span></a>
+					<a class="demo" href="index6.html"><span>Demo 6</span></a> -->
+				</nav>
+		
+			</div>
+			<div class="slideshow">
+				<div class="slides">
+					<div class="slide slide--current">
+						<div class="slide__img" style="background-image: url(img/dresden7.jpg);"></div>
+						<h1 class="slide__title">Dresden</h2>
+						<p class="slide__desc">
+							Dresden ist im kulturellen und künstlerischen Bereich weltberühmt mit einer Vielzahl von Theatern, Orchestern, Chören und berühmten Museen. Gleichzeitig hat es eine außergewöhnliche Architektur, insbesondere den Barockstil
+						</p>
+						<a class="slide__link" href="#">Explore destinations</a>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(img/dresden3.jpg);"></div>
+						<h1 class="slide__title">Brühl's Terrace</h1>
+												<p class="slide__desc">
+							ist ein architektonisches Ensemble, das sich entlang der Elbe neben der Altstadt erstreckt, in der sich die Dresdner Hochschule der Schönen Künste befindet. Ab dem Beginn des 19. Jahrhunderts wird sie manchmal auch als "Balkon Europas" bezeichnet.
+						</p>
+						<a class="slide__link" href="#">Adventure yourself</a>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(img/dresden8.jpg);"></div>
+						<h1 class="slide__title">Wetter</h2>
+						<p class="slide__desc">
+							Dresden hat ein gemäßigtes ozeanisches Klima (Cfb), das von der Lage im Landesinneren beeinflusst wird. Die heißen Sommer und Winter sind etwas kühler als der deutsche Durchschnitt. Die Durchschnittstemperatur im Januar beträgt 0,1 ° C und im Juli 19,0 ° C.
+						</p>
+						<a class="slide__link" href="#">Discover calmness</a>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(img/dresden1.jpg);"></div>
+						<h1 class="slide__title">Frauenkirche</h2>
+						<p class="slide__desc">
+							in Dresden ist eine lutherische Kirche aus dem Barock. Architektonisch ist es eine der herausragendsten Kirchen in Europa und ein bedeutendes Beispiel für die heiligen Gebäude des Lutheranismus.
+						</p>
+						<a class="slide__link" href="#">Discover calmness</a>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(img/dresden4.jpg);"></div>
+						<h1 class="slide__title">Semper Oper</h2>
+						<p class="slide__desc">
+							Die Semperoper ist das Operngebäude des Landes Sachsen in Dresden. Es gilt als eines der Juwelen der Theaterarchitektur der Welt. Es wurde vom Architekten Gottfried Semper entworfen und 1945 teilweise zerstört, bis es 1986 sorgfältig wieder aufgebaut wurde. Einige der besten deutschen Opern wurden in diesem Theater uraufgeführt, drei von Richard Wagner und die meisten Richard Strauss.
+						</p>
+						<a class="slide__link" href="#">Find out more</a>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(img/dresden9.jpg);"></div>
+						<h1 class="slide__title">Fürstenzug</h2>
+						<p class="slide__desc">	
+
+Die Fürstenparade ist der Name eines Wandgemäldes im historischen Zentrum der deutschen Stadt Dresden. Es zeigt eine Parade von Reitern, die größer als das Leben sind, und besteht aus rund 24.000 Meissener Porzellanfliesen. Damit ist es das größte Porzellanmosaik der Welt						
+						</p>
+						<a class="slide__link" href="#">Find out more</a>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(img/dresden10.jpg);"></div>
+						<h1 class="slide__title">Großer Garten</h2>
+						<p class="slide__desc">
+							
+Heute beherbergt der Große Garten den Zoologischen Garten Dresden, den Botanischen Garten, das Sommerpalast, den Karolasee (mit der Möglichkeit, Boote zu mieten), den Schauplatz der sogenannten Jungen Garde und die "Parkbahn" (a kleine Rennstrecke für einen Kinderzug) sowie kleine Springbrunnen.
+
+Der Garten hat eine fast rechteckige Form mit einer Fläche von ca. 2 km² und einer Länge von 1900 m. Im Nordwesten des Großen Gartens befindet sich das transparente Volkswagen Werk.
+						</p>
+						<a class="slide__link" href="#">Find out more</a>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(img/meine-famillie.jpg);"></div>
+						<h1 class="slide__title">und</h2>
+						<p class="slide__desc">
+							
+Und sehr wichtig für mich ist meine Familie in Dresden
+						</p>
+						<a class="slide__link" href="#">Find out more</a>
+					</div>
+				</div>
+				<nav class="slidenav">
+					<button class="slidenav__item slidenav__item--prev">Previous</button>
+					<span>/</span>
+					<button class="slidenav__item slidenav__item--next">Next</button>
+				</nav>
+			</div>
+		</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js"></script>
+<script src="script.js"></script>
+
+		<script src="js/demo.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/demo2.js"></script>
+	</body>
+</html>
